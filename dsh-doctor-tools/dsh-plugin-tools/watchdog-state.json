@@ -1,0 +1,10 @@
+{
+    "profileHash":  "8BD2E13EB99BA95F61AAB672CB94328CB2002CFBAEBCB770",
+    "state":  "healthy",
+    "pendingSnapshot":  "",
+    "lastHealthySnapshot":  "after-upgrade-20260922-201839",
+    "lastCheck":  "2026-09-22 20:18:40",
+    "lastServerPid":  27888,
+    "consecutiveFailures":  0,
+    "lastLogSize":  41731
+}

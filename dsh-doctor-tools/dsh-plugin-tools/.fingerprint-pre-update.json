@@ -1,0 +1,52 @@
+{
+  "at": "2026-09-25T02:08:34.486Z",
+  "packages": {
+    "@linxin666/dsh-web-all": {
+      "version": "0.3.23",
+      "mtime": "2026-09-19T14:19:12.133Z"
+    },
+    "@liustack/modlens": {
+      "version": "3.26.1",
+      "mtime": "2026-09-19T14:19:11.788Z"
+    },
+    "@morlay/better-session": {
+      "version": "0.0.20",
+      "mtime": "2026-09-19T14:19:11.694Z"
+    },
+    "@morlay/session-rdb": {
+      "version": "0.0.20",
+      "mtime": "2026-09-19T14:19:11.857Z"
+    },
+    "@morlay/ui-conversation-message-actions": {
+      "version": "0.0.18",
+      "mtime": "2026-09-19T14:20:04.124Z"
+    },
+    "dsh-meme": {
+      "version": "0.1.43",
+      "mtime": "2026-09-16T12:04:44.402Z"
+    },
+    "dsh-routing-suite": {
+      "version": "0.1.2",
+      "mtime": "2026-08-19T12:41:22.569Z"
+    },
+    "@omdsh-dev/dsh-genui": {
+      "version": "0.8.6",
+      "mtime": "2026-08-16T02:02:28.000Z"
+    },
+    "dsh-at-file": {
+      "version": "0.6.3",
+      "mtime": "2026-08-16T21:03:54.000Z"
+    },
+    "dsh-better-sidebar": {
+      "version": "0.19.1",
+      "mtime": "2026-09-19T14:19:12.174Z"
+    }
+  },
+  "files": {
+    "dsh-meme/client.js": "97e1ee916953550f",
+    "@morlay/ui-conversation-message-actions/dist/src-B4HwXsob.mjs": "5cea66694493845f",
+    "profile/package.json": "8bd2e13eb99ba95f",
+    "profile/pnpm-workspace.yaml": "b2002cfbaebcb770",
+    "profile/pnpm-lock.yaml": "3fc821f1fcec687a"
+  }
+}
