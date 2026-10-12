@@ -1,0 +1,9 @@
+# dsh-chime bundle patch：宿主半边（会话事件 → 通知队列 → /dsh-chime/poll）
+# 与浏览器半边（设置页「响铃」+ Web Audio 播放）。
+#
+# id 必须与 lib/client.js 里 window.__ModuleLoader__.load({ id }) 一致，
+# name 必须是实际包名（cordis 按 name import 包）。
+# 纯 insert(id/name) 可热挂载，免重启。
+- insert:
+    - id: dsh-chime
+      name: dsh-chime

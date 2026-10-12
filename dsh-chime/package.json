@@ -1,0 +1,47 @@
+{
+  "name": "dsh-chime",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 响铃提醒插件：后台活干完响一声舒缓的，agent 需要你协助时响急促的（提问/计划待批准/卡住/出错）。宿主端判定 + 浏览器端播放，设置页可调音量、音色与静音时段。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "HANDOFF.md",
+    "README.md",
+    "cordis.patch.yml",
+    "lib",
+    "sounds"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh-chime",
+    "deepseek-harness",
+    "notification",
+    "sound"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "test": "node --test tests/rules.test.mjs tests/host.test.mjs tests/batch.test.mjs tests/sse-http.test.mjs tests/custom-sound.test.mjs tests/escalation.test.mjs tests/escalation-chain.test.mjs tests/notify.test.mjs tests/settings-smoke.test.mjs",
+    "sounds": "python sounds/synth_sounds.py && python sounds/check_sounds.py",
+    "verify:audio": "node tests/render-audio.mjs"
+  }
+}
